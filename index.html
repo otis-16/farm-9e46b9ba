@@ -24,7 +24,7 @@ main{display:flex;flex-direction:column;gap:0}.farm-area{order:0;width:100%}.sid
 body{--sky-top:#83bdd5;--sky-bottom:#f1ecd3;background:linear-gradient(var(--sky-top),var(--sky-bottom) 650px,#bacb9d);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;isolation:isolate}h1,h2{font-family:"Noto Serif TC","Songti TC",serif}body[data-time=morning]{--sky-top:#c4b4ce;--sky-bottom:#ffe4bb}body[data-time=dusk]{--sky-top:#9b8bb8;--sky-bottom:#f6c5a1}body[data-time=night]{--sky-top:#172b50;--sky-bottom:#6d8798}.landscape{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}.landscape svg{position:absolute;bottom:0;width:100%;height:85%;min-width:1000px}.stars{opacity:0;transition:opacity 2s}.stars circle{fill:#fff2c3;stroke:none}body[data-time=night] .stars{opacity:1}.cloud{z-index:-1;animation:cloudDrift 65s ease-in-out infinite alternate;filter:blur(1px);opacity:.65}.c2{animation-duration:90s}.panel,.stat{background:linear-gradient(130deg,#fffffff0,#fffaf0bd);backdrop-filter:blur(18px);border:1px solid #fff9;box-shadow:0 12px 32px #294d3b16,inset 0 1px #fff}.field{background:linear-gradient(140deg,#c1d59cdd,#9fb77feb);box-shadow:0 15px 35px #38583b25,inset 0 1px #f6ffe0}.plot{box-shadow:0 4px 0 #825b47,0 8px 14px #4b553221}.plot .crop{filter:drop-shadow(0 4px 2px #352c2920)}button{transition:transform .15s,background .2s,box-shadow .2s;box-shadow:0 3px 8px #405b510a}button:active:not(:disabled){transform:translateY(2px) scale(.97)}.greenhouses{z-index:0;opacity:.8;gap:4px;pointer-events:none}.scene-copy,.castle{z-index:1}.greenhouses .icon:nth-child(2){transform:translateY(-8px) scale(1.1)}body[data-time=night] .greenhouses{filter:drop-shadow(0 0 10px #ffdf78)}body[data-time=night] .greenhouses path:first-child{fill:#ffe8a1}body[data-time=night] h1,body[data-time=night] header .eyebrow,body[data-time=night] header p,body[data-time=night] .scene-copy{color:#fff4d8}.robot{width:44px;height:48px;filter:drop-shadow(0 4px 3px #233b4033)}.robot.resting{filter:grayscale(.65);opacity:.7}.robot-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0;font-size:12px}.robot-row button{font-size:12px}.robot-help{font-size:12px;line-height:1.8}.action-pop{position:absolute;width:26px;height:26px;left:50%;top:-22px;animation:actionPop 1s ease-out both;background:#fff9dd;border-radius:50%;padding:3px}.fx{position:fixed;pointer-events:none;z-index:60;width:22px;height:22px}.celebration{position:fixed;inset:0;pointer-events:none;z-index:55;background:radial-gradient(ellipse at center,#fff1b02e,transparent 65%);animation:celebrateFade 1.8s both}.celebration span{position:absolute;width:20px;height:20px;animation:petalFall 1.8s ease-out both}.castle.building{animation:build .9s ease-out}.stat strong,.stat b{display:inline-block;font-variant-numeric:tabular-nums}.number-roll{animation:numberRoll .45s ease-out}@keyframes numberRoll{from{transform:translateY(8px);opacity:.3}to{transform:translateY(0);opacity:1}}@keyframes build{0%{transform:translateY(12px);filter:brightness(1.8)}40%{transform:translateY(-5px)}100%{transform:none;filter:none}}@keyframes actionPop{0%{opacity:0;translate:0 8px}25%{opacity:1}100%{opacity:0;translate:0 -15px}}@keyframes cloudDrift{to{translate:100px 15px}}@keyframes petalFall{from{transform:translateY(-40px) rotate(0);opacity:1}to{transform:translateY(70vh) rotate(260deg);opacity:0}}@keyframes celebrateFade{80%{opacity:1}100%{opacity:0}}
 @media(max-width:800px){.greenhouses{display:flex;width:36%;bottom:5px;opacity:.35}.greenhouses .icon{height:50px}.cloud{display:block;width:100px}.scene-copy{padding-right:10px}.robot{width:32px;height:38px}.robot-help{font-size:11px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fx,.celebration,.action-pop{display:none!important}}
-@media(max-width:560px){.greenhouses{display:none!important}}#help-modal{max-width:520px;text-align:left;max-height:85vh;overflow-y:auto}#help-modal h2{text-align:center;margin:0 0 8px}.help-body h3{font-size:15px;margin:14px 0 4px;color:var(--ink)}.help-body p{margin:0;font-size:14px;line-height:1.7}.help-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}</style></head><body><div class="landscape" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="none"><g class="stars"><circle cx="0" cy="0" r="1"/><circle cx="173" cy="73" r="2"/><circle cx="346" cy="146" r="3"/><circle cx="519" cy="219" r="1"/><circle cx="692" cy="292" r="2"/><circle cx="865" cy="5" r="3"/><circle cx="1038" cy="78" r="1"/><circle cx="1211" cy="151" r="2"/><circle cx="1384" cy="224" r="3"/><circle cx="117" cy="297" r="1"/><circle cx="290" cy="10" r="2"/><circle cx="463" cy="83" r="3"/><circle cx="636" cy="156" r="1"/><circle cx="809" cy="229" r="2"/><circle cx="982" cy="302" r="3"/><circle cx="1155" cy="15" r="1"/><circle cx="1328" cy="88" r="2"/><circle cx="61" cy="161" r="3"/><circle cx="234" cy="234" r="1"/><circle cx="407" cy="307" r="2"/><circle cx="580" cy="20" r="3"/><circle cx="753" cy="93" r="1"/><circle cx="926" cy="166" r="2"/><circle cx="1099" cy="239" r="3"/><circle cx="1272" cy="312" r="1"/><circle cx="5" cy="25" r="2"/><circle cx="178" cy="98" r="3"/><circle cx="351" cy="171" r="1"/><circle cx="524" cy="244" r="2"/><circle cx="697" cy="317" r="3"/><circle cx="870" cy="30" r="1"/><circle cx="1043" cy="103" r="2"/><circle cx="1216" cy="176" r="3"/><circle cx="1389" cy="249" r="1"/><circle cx="122" cy="322" r="2"/><circle cx="295" cy="35" r="3"/><circle cx="468" cy="108" r="1"/><circle cx="641" cy="181" r="2"/><circle cx="814" cy="254" r="3"/><circle cx="987" cy="327" r="1"/><circle cx="1160" cy="40" r="2"/><circle cx="1333" cy="113" r="3"/><circle cx="66" cy="186" r="1"/><circle cx="239" cy="259" r="2"/><circle cx="412" cy="332" r="3"/></g><path d="M0 420L180 240 340 390 590 200 810 370 1050 210 1440 410V900H0Z" fill="#718f9c" opacity=".4"/><path d="M0 520L260 360 440 470 730 320 990 460 1250 340 1440 480V900H0Z" fill="#668d82" opacity=".5"/><path d="M0 640Q340 480 720 640T1440 610V900H0Z" fill="#9ab77e"/><path d="M0 790Q440 620 1440 760V900H0Z" fill="#b4c995"/></svg></div><div class="cloud c1"></div><div class="cloud c2"></div>
+@media(max-width:560px){.greenhouses{display:none!important}}#help-modal{max-width:520px;text-align:left;max-height:85vh;overflow-y:auto}#help-modal h2{text-align:center;margin:0 0 8px}.help-body h3{font-size:15px;margin:14px 0 4px;color:var(--ink)}.help-body p{margin:0;font-size:14px;line-height:1.7}.help-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}.landscape #bloom-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}</style></head><body><div class="landscape" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="none"><g class="stars"><circle cx="0" cy="0" r="1"/><circle cx="173" cy="73" r="2"/><circle cx="346" cy="146" r="3"/><circle cx="519" cy="219" r="1"/><circle cx="692" cy="292" r="2"/><circle cx="865" cy="5" r="3"/><circle cx="1038" cy="78" r="1"/><circle cx="1211" cy="151" r="2"/><circle cx="1384" cy="224" r="3"/><circle cx="117" cy="297" r="1"/><circle cx="290" cy="10" r="2"/><circle cx="463" cy="83" r="3"/><circle cx="636" cy="156" r="1"/><circle cx="809" cy="229" r="2"/><circle cx="982" cy="302" r="3"/><circle cx="1155" cy="15" r="1"/><circle cx="1328" cy="88" r="2"/><circle cx="61" cy="161" r="3"/><circle cx="234" cy="234" r="1"/><circle cx="407" cy="307" r="2"/><circle cx="580" cy="20" r="3"/><circle cx="753" cy="93" r="1"/><circle cx="926" cy="166" r="2"/><circle cx="1099" cy="239" r="3"/><circle cx="1272" cy="312" r="1"/><circle cx="5" cy="25" r="2"/><circle cx="178" cy="98" r="3"/><circle cx="351" cy="171" r="1"/><circle cx="524" cy="244" r="2"/><circle cx="697" cy="317" r="3"/><circle cx="870" cy="30" r="1"/><circle cx="1043" cy="103" r="2"/><circle cx="1216" cy="176" r="3"/><circle cx="1389" cy="249" r="1"/><circle cx="122" cy="322" r="2"/><circle cx="295" cy="35" r="3"/><circle cx="468" cy="108" r="1"/><circle cx="641" cy="181" r="2"/><circle cx="814" cy="254" r="3"/><circle cx="987" cy="327" r="1"/><circle cx="1160" cy="40" r="2"/><circle cx="1333" cy="113" r="3"/><circle cx="66" cy="186" r="1"/><circle cx="239" cy="259" r="2"/><circle cx="412" cy="332" r="3"/></g><path d="M0 420L180 240 340 390 590 200 810 370 1050 210 1440 410V900H0Z" fill="#718f9c" opacity=".4"/><path d="M0 520L260 360 440 470 730 320 990 460 1250 340 1440 480V900H0Z" fill="#668d82" opacity=".5"/><path d="M0 640Q340 480 720 640T1440 610V900H0Z" fill="#9ab77e"/><path d="M0 790Q440 620 1440 760V900H0Z" fill="#b4c995"/></svg><canvas id="bloom-canvas"></canvas></div><div class="cloud c1"></div><div class="cloud c2"></div>
 <header><div class="header-actions"><button onclick="openHelp()">教學</button><button id="mute-toggle" onclick="toggleMute()" aria-pressed="false">音效：開</button><button onclick="restartGame()">重新開始</button></div><div><div class="eyebrow">HOULI · TAICHUNG · LITTLE FARMER</div><h1>耕牛園小花農</h1><p>農村城堡耕牛園</p></div><div class="stats"><div class="stat"><small>農場金幣</small><br><strong id="gold-display">80</strong></div><div class="stat"><small>農場等級 <b id="level-display">1</b></small><br><span id="exp-text">0 / 50 XP</span><div class="bar"><i id="exp-bar" style="width:0%"></i></div></div></div></header>
 <main><aside class="sidebar"><section class="panel"><div class="eyebrow">A LITTLE CARE, EVERY DAY</div><h2>今天，一起照顧花田</h2><div class="tools" id="tools"></div></section><section class="panel"><h2>種子小舖</h2><small>選好種子，再點空地播種</small><div id="seed-shop" class="seed-shop"></div><details><summary>作物數值與遊戲說明</summary><div id="balance"></div><p>每株只能澆水一次，提早 2 秒成熟。成熟後可保留成長時間的 1.5 倍；逾時枯萎。咬滿 2 口，售價減少 70%，經驗不減。文心蘭每收成 5 朵解鎖下一級；受損收成也計入。</p><p>每 3 秒，依每 2 株作物提供一個蝸牛名額，每個空名額有 25% 機率出現蝸牛。蝸牛先爬行兩次，再停留吃兩口。鴨子每秒移動一格，只照顧自己的 2×2 區域。</p><p>進度會自動儲存在此瀏覽器；離線時間也會計入作物成長與枯萎。</p></details></section><section class="panel"><div class="eyebrow">YOUR LITTLE FARM COMPANION</div><h2>自動農夫機器人</h2><div id="robot-shop"></div><p class="robot-help">先採收成熟作物，再播下目前選的種子。只在抵達土地後工作；枯萎作物與蝸牛留給你和鴨鴨。</p></section></aside>
 <section class="farm-area"><div class="scene"><div class="castle" id="castle"></div><div class="scene-copy"><div class="eyebrow">OUR COUNTRYSIDE CASTLE</div><b id="castle-label"></b><p>從一方土地，種出一座城堡。</p></div><div class="greenhouses" id="greenhouses"></div></div><section class="field"><div class="field-title"><h2>城堡旁的小花田</h2><small id="tool-hint">播種中 · 南瓜</small></div><div class="farm-surface"><div id="farm-grid" class="grid"></div><div id="animal-layer" class="animal-layer"></div></div><p class="field-note">成熟點一下就採收 · 點蝸牛直接抓走<br>兩口咬傷：售價 −70% · 枯萎請用清理工具</p></section><section class="panel goal-panel"><h2>小農目標</h2><p id="goal-text" aria-live="polite"></p></section><div class="bottom"><section class="panel"><h2>鴨鴨巡田隊</h2><div id="duck-info"></div><button id="buy-duck" onclick="buyDuck()">購買鴨子 · 100 金幣</button><p style="font-size:12px">依序守護左上、右上、左下各 4 格。右下 4 格由你照顧。</p></section><section class="panel"><h2>文心蘭外銷倉庫</h2><small>每批 5 朵 · 外銷為一般售價 2 倍</small><div id="warehouse"></div></section></div><div class="mascot"><span class="icon" id="cow"></span><div class="speech" id="guide" aria-live="polite">我是小牛園長！先選南瓜、點空地，10 秒就能採收。種植文心蘭 E 級，慢慢培育你的外銷花田吧。</div></div></section></main>
@@ -142,4 +142,78 @@ function checkGoals(){const goals=[...['E','D','C','B','A'].map(g=>({id:'harvest
 window.addEventListener('pagehide',saveGame);document.addEventListener('visibilitychange',()=>{if(document.hidden)saveGame();});
 
 window.onload=()=>{updateDaytime();setInterval(updateDaytime,60000);loadGame();gameLoop();renderShop();renderTools();renderGrid();updateUI();$('cow').innerHTML=icon('cow');$('modal-flower').innerHTML=icon('orchidA');$('greenhouses').innerHTML=Array(3).fill(`<span class="icon">${icon('greenhouse')}</span>`).join('');$('balance').innerHTML='<table><thead><tr><th>作物</th><th>種子</th><th>售價</th><th>秒</th><th>XP</th></tr></thead><tbody>'+CROPS.map(c=>`<tr><td>${c.name}</td><td>${c.cost}</td><td>${c.reward}</td><td>${c.growTime}</td><td>${c.exp}</td></tr>`).join('')+'</tbody></table>';const shop=$('seed-shop').closest('section'),sidebar=document.querySelector('.sidebar'),field=document.querySelector('.field');const mobile=matchMedia('(max-width:800px)');function placeShop(){if(mobile.matches)field.after(shop);else sidebar.append(shop);}placeShop();mobile.addEventListener('change',placeShop);renderMute();renderTutorial();setInterval(()=>{gameLoop();saveGame();renderTutorial();},200);setInterval(snailLoop,3000);new ResizeObserver(refreshFarmGeometry).observe($('farm-grid'));requestAnimationFrame(animalFrame);};
+
+(function(){
+const cv=document.getElementById('bloom-canvas');if(!cv||!cv.getContext)return;
+const ctx=cv.getContext('2d');const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+let W=0,H=0,dpr=1,field=null,petals=[],motes=[],last=0,raf=0;
+const rnd=(a,b)=>a+Math.random()*(b-a);
+const night=()=>document.body.dataset.time==='night';
+const dusk=()=>document.body.dataset.time==='dusk';
+function orchid(g,x,y,s,alpha,blur){
+  // 文心蘭：細枝上一串小黃花，每朵是大裙瓣＋小花瓣
+  g.save();g.globalAlpha=alpha;if(blur)g.filter='blur('+blur+'px)';
+  g.strokeStyle='rgba(96,128,70,.7)';g.lineWidth=Math.max(1,s*.06);
+  g.beginPath();g.moveTo(x,y+s*3);g.quadraticCurveTo(x+s*.6,y+s*1.4,x+s*1.6,y);g.stroke();
+  for(let n=0;n<6;n++){
+    const u=n/5,px=x+s*1.6*u+rnd(-s*.2,s*.2),py=y+s*3*(1-u)*(1-u*.6)-s*.3+rnd(-s*.2,s*.2),r=s*rnd(.32,.45);
+    g.fillStyle='#f4c430';g.beginPath();g.ellipse(px,py+r*.5,r,r*.75,0,0,Math.PI*2);g.fill();
+    g.fillStyle='#e8a317';g.beginPath();g.ellipse(px,py-r*.35,r*.42,r*.3,0,0,Math.PI*2);g.fill();
+    g.fillStyle='#9b5a1a';g.beginPath();g.arc(px,py-r*.1,r*.12,0,Math.PI*2);g.fill();
+  }
+  g.restore();
+}
+function buildField(){
+  field=document.createElement('canvas');field.width=W*dpr;field.height=H*dpr;
+  const g=field.getContext('2d');g.scale(dpr,dpr);
+  // 柔焦光點
+  for(let n=0;n<Math.round(W/22);n++){
+    const x=rnd(0,W),y=rnd(H*.62,H),r=rnd(8,34);
+    const grd=g.createRadialGradient(x,y,0,x,y,r);grd.addColorStop(0,'rgba(255,214,90,.55)');grd.addColorStop(1,'rgba(255,214,90,0)');
+    g.fillStyle=grd;g.beginPath();g.arc(x,y,r,0,Math.PI*2);g.fill();
+  }
+  // 遠景（模糊）到近景（清楚）的文心蘭
+  const rows=[[.70,.6,.45,5],[.80,.9,.65,2.5],[.92,1.3,.9,0]];
+  for(const [fy,sc,al,bl] of rows){
+    const s=Math.max(9,W/90)*sc,count=Math.round(W/(s*3.2));
+    for(let n=0;n<count;n++)orchid(g,rnd(-s,W),H*fy+rnd(-s,s),s*rnd(.8,1.2),al,bl);
+  }
+}
+function resize(){
+  dpr=Math.min(2,window.devicePixelRatio||1);W=innerWidth;H=innerHeight;
+  cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);buildField();
+  const area=W*H,np=Math.min(26,Math.round(area/42000)),nm=Math.min(40,Math.round(area/30000));
+  petals=Array.from({length:np},()=>({x:rnd(0,W),y:rnd(-H,H),s:rnd(3,7),r:rnd(0,6.3),vr:rnd(-1.2,1.2),vx:rnd(8,22),vy:rnd(10,24),sw:rnd(0,6.3)}));
+  motes=Array.from({length:nm},()=>({x:rnd(0,W),y:rnd(H*.3,H),r:rnd(1,2.6),vy:rnd(-10,-3),ph:rnd(0,6.3),sp:rnd(.6,1.6)}));
+  draw(0);
+}
+function draw(dt){
+  ctx.clearRect(0,0,W,H);
+  const nt=night(),dk=dusk();
+  ctx.globalAlpha=nt?.55:1;ctx.drawImage(field,0,0,W,H);ctx.globalAlpha=1;
+  // 飄落的花瓣
+  for(const p of petals){
+    p.sw+=dt;p.x+=(p.vx+Math.sin(p.sw)*10)*dt;p.y+=p.vy*dt;p.r+=p.vr*dt;
+    if(p.y>H+10||p.x>W+10){p.y=rnd(-40,-10);p.x=rnd(-W*.3,W);}
+    ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.globalAlpha=nt?.35:.8;
+    ctx.fillStyle=dk?'#f7b85a':'#f6c93a';ctx.beginPath();ctx.ellipse(0,0,p.s,p.s*.55,0,0,Math.PI*2);ctx.fill();ctx.restore();
+  }
+  // 光點（白天）／螢火蟲（晚上）
+  for(const m of motes){
+    m.ph+=dt*m.sp;m.y+=m.vy*dt;m.x+=Math.sin(m.ph)*6*dt;
+    if(m.y<H*.25){m.y=H+5;m.x=rnd(0,W);}
+    const a=nt?(.35+.65*Math.max(0,Math.sin(m.ph*2))):(.25+.2*Math.sin(m.ph));
+    const r=m.r*(nt?2.2:1.4);
+    const grd=ctx.createRadialGradient(m.x,m.y,0,m.x,m.y,r*3);
+    const c=nt?'210,255,140':'255,246,210';
+    grd.addColorStop(0,'rgba('+c+','+a+')');grd.addColorStop(1,'rgba('+c+',0)');
+    ctx.fillStyle=grd;ctx.beginPath();ctx.arc(m.x,m.y,r*3,0,Math.PI*2);ctx.fill();
+  }
+}
+function loop(ts){const dt=last?Math.min(.05,(ts-last)/1000):0;last=ts;draw(dt);raf=requestAnimationFrame(loop);}
+function start(){cancelAnimationFrame(raf);last=0;if(reduce.matches||document.hidden){draw(0);return;}raf=requestAnimationFrame(loop);}
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{resize();start();},150);});
+document.addEventListener('visibilitychange',start);reduce.addEventListener?.('change',start);
+resize();start();
+})();
 </script></body></html>
